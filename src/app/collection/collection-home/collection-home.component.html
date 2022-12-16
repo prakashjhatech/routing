@@ -1,0 +1,11 @@
+<app-header-lable>hey welcome to collection page... </app-header-lable>
+<app-table [dataInChildtwhichIsComeFromCollectionHomeParent]="dataInParentwhichIsCollectionHome"
+    [headerTable]="headerCollection"></app-table>
+<app-header-lable>Tab_Menu</app-header-lable>
+<app-tab-menu>
+
+    <a routerLink="./" class="item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Biography</a>
+    <a routerLink="partners" class="item" routerLinkActive="active">Partners</a>
+    <a routerLink="companies" class="item" routerLinkActive="active">Companies</a>
+
+</app-tab-menu>

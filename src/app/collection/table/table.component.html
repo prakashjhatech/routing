@@ -1,0 +1,19 @@
+<table class="ui table">
+
+    <thead>
+
+        <tr>
+            <th *ngFor="let header of headerTable">
+                {{header.label}}
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let data of dataInChildtwhichIsComeFromCollectionHomeParent">
+            <td *ngFor="let header of headerTable">
+                {{data[header.key]}}
+            </td>
+        </tr>
+    </tbody>
+</table>

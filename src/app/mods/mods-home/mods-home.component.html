@@ -1,0 +1,5 @@
+<app-header-lable>
+    Welcome to mods Component
+</app-header-lable>
+<button class="ui button" (click)="onclick()">OpenModal</button>
+<app-modal (close)="onclick()" *ngIf="modalBtn"></app-modal>
